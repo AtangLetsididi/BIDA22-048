@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – She Cooks Catering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Primary navigation">
+      <div class="logo-ph" aria-label="Logo placeholder">Logo</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Page hero">
+      <p class="tag">Get in touch</p>
+      <h1>Contact Us</h1>
+      <p class="sub">We'd love to hear from you — reach out for bookings, enquiries, or any questions about our services.</p>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section aria-labelledby="contact-info-heading">
+      <div class="section-label">Contact info</div>
+      <h2 id="contact-info-heading">How to reach us</h2>
+      <div class="contact-cards">
+        <article class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Phone</h3>
+          <p><a href="tel:+26772722727">+267 72 722 727</a></p>
+          <p>Mon – Sat, 8am – 6pm</p>
+        </article>
+        <article class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:shecookscatering@gmail.com">shecookscatering@gmail.com</a></p>
+          <p>We reply within 24 hours</p>
+        </article>
+        <article class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Location</h3>
+          <p>Plot 1426, Phase 2</p>
+          <p>Gaborone, Botswana</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section aria-label="Map location">
+      <div class="section-label">Map</div>
+      <div class="map-ph" role="img" aria-label="Map placeholder showing She Cooks Catering location in Gaborone">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Map placeholder</span>
+        <small>Plot 1426, Phase 2, Gaborone, Botswana</small>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section aria-labelledby="contact-form-heading">
+      <div class="section-label">Contact form</div>
+      <h2 id="contact-form-heading">Send us a message</h2>
+      <form action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+267 ..." />
+          </div>
+          <div class="form-group">
+            <label for="enquiry-type">Type of enquiry</label>
+            <select id="enquiry-type" name="enquiry-type">
+              <option value="" disabled selected>Select — Wedding / Corporate / Private / Other</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate event</option>
+              <option value="private">Private party</option>
+              <option value="other">General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your event, preferred date, number of guests, and any special requirements..." required></textarea>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn-submit">Send message</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">She Cooks Catering</p>
+        <p class="footer-tagline">Bringing warmth, flavour, and professionalism to every table in Gaborone and beyond.</p>
+        <div class="social-row" aria-label="Social media links">
+          <a href="#" class="social-dot" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-dot" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-dot" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.5 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services &amp; menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="feedback.html">Feedback &amp; contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>+267 72 722 727</li>
+          <li>shecookscatering@gmail.com</li>
+          <li>Plot 1426, Phase 2, Gaborone, Botswana</li>
+          <li>Mon – Sat, 8am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <small>&copy; 2026 She Cooks Catering. All rights reserved.</small>
+      <small>Designed for assignment purposes</small>
+    </div>
+  </footer>
+
+</body>
+</html>
