@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback – She Cooks Catering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Primary navigation">
+      <div class="logo-ph" aria-label="Logo placeholder">Logo</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Page hero">
+      <p class="tag">Share your experience</p>
+      <h1>Feedback</h1>
+      <p class="sub">We value your feedback — it helps us grow and serve you better.</p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section aria-labelledby="testimonials-heading">
+      <div class="section-label">Testimonials</div>
+      <h2 id="testimonials-heading">What our clients say</h2>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+          <blockquote>The food was absolutely incredible. Every guest complimented the spread at our wedding!</blockquote>
+          <cite>— Kefilwe M., Gaborone</cite>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+          <blockquote>Professional, punctual, and the flavours were out of this world. Highly recommended.</blockquote>
+          <cite>— Thabo D., Corporate client</cite>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars" aria-label="4 out of 5 stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+          <blockquote>Great service and beautiful presentation. Will definitely book again for our next event.</blockquote>
+          <cite>— Lesego K., Private party</cite>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEEDBACK FORM -->
+    <section aria-labelledby="form-heading">
+      <div class="section-label">Feedback form</div>
+      <h2 id="form-heading">Leave your feedback</h2>
+      <form action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+267 ..." />
+          </div>
+          <div class="form-group">
+            <label for="event-type">Type of event</label>
+            <select id="event-type" name="event-type">
+              <option value="" disabled selected>Select — Wedding / Corporate / Private / Other</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate</option>
+              <option value="private">Private party</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">Your feedback</label>
+            <textarea id="message" name="message" placeholder="Tell us about your experience with She Cooks Catering..." required></textarea>
+          </div>
+          <div class="form-group full">
+            <label>Rate your experience</label>
+            <div class="rating-row" role="group" aria-label="Star rating">
+              <span aria-label="1 star">&#9733;</span>
+              <span aria-label="2 stars">&#9733;</span>
+              <span aria-label="3 stars">&#9733;</span>
+              <span aria-label="4 stars">&#9733;</span>
+              <span aria-label="5 stars">&#9733;</span>
+            </div>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn-submit">Submit feedback</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section aria-label="Call to action">
+      <div class="cta-bar">
+        <div>
+          <h2>Want to book an event instead?</h2>
+          <p>Head over to our services page or get in touch via our contact page.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="services.html" class="btn-solid">View services</a>
+          <a href="contact.html" class="btn-outline">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">She Cooks Catering</p>
+        <p class="footer-tagline">Bringing warmth, flavour, and professionalism to every table in Gaborone and beyond.</p>
+        <div class="social-row" aria-label="Social media links">
+          <a href="#" class="social-dot" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-dot" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-dot" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.5 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services &amp; menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="feedback.html">Feedback &amp; contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>+267 72 722 727</li>
+          <li>shecookscatering@gmail.com</li>
+          <li>Plot 1426, Phase 2, Gaborone, Botswana</li>
+          <li>Mon – Sat, 8am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <small>&copy; 2026 She Cooks Catering. All rights reserved.</small>
+      <small>Designed for assignment purposes</small>
+    </div>
+  </footer>
+
+</body>
+</html>
