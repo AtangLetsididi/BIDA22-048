@@ -1036,3 +1036,26 @@ footer {
   footer { padding: 36px 24px 20px; }
   .footer-bar { flex-direction: column; gap: 6px; text-align: center; }
 }
+
+/* existing styles above */
+
+nav {
+  background-color: #333;
+}
+
+.svc-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.svc-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+``
