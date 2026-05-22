@@ -335,12 +335,19 @@ section {
 }
 
 /* ── ABOUT GRID ── */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+.gallery-grid {
+  column-count: 3;
+  column-gap: 15px;
 }
+
+.gallery-grid img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  break-inside: avoid;
+}
+``
 
 .about-grid h2 {
   margin-bottom: 16px;
@@ -570,40 +577,6 @@ tbody td:first-child {
   gap: 12px;
 }
 
-.g-item {
-  border: 1.5px dashed var(--color-mid-grey);
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: var(--color-cream);
-  transition: border-color var(--transition);
-}
-
-.g-item:hover {
-  border-color: var(--color-gold);
-}
-
-.g-item svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--color-mid-grey);
-  fill: none;
-  stroke-width: 1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.g-item figcaption {
-  font-size: 10px;
-  color: var(--color-mid-grey);
-  letter-spacing: 0.05em;
-}
-
-.g-short { height: 160px; }
-.g-tall  { height: 332px; grid-row: span 2; }
 
 /* ── FILTER BAR (gallery) ── */
 .filter-bar {
